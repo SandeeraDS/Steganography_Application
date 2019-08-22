@@ -122,7 +122,7 @@ namespace Steganography_154048G
 
             string extractedText = SteganographyOps.extractText(bmp);
 
-            if (extractedText==null)
+            if (extractedText==null || extractedText.Equals(""))
             {
                 MessageBox.Show("Not contain a secret message", "Error");
             }
