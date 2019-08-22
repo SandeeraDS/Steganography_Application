@@ -1,0 +1,10 @@
+C:\Users\GL 62M 7RDX\source\repos\Steganography_154048G\Steganography_154048G\bin\Debug\Steganography_154048G.exe.config
+C:\Users\GL 62M 7RDX\source\repos\Steganography_154048G\Steganography_154048G\bin\Debug\Steganography_154048G.exe
+C:\Users\GL 62M 7RDX\source\repos\Steganography_154048G\Steganography_154048G\bin\Debug\Steganography_154048G.pdb
+C:\Users\GL 62M 7RDX\source\repos\Steganography_154048G\Steganography_154048G\obj\Debug\Steganography_154048G.csprojAssemblyReference.cache
+C:\Users\GL 62M 7RDX\source\repos\Steganography_154048G\Steganography_154048G\obj\Debug\Steganography_154048G.Properties.Resources.resources
+C:\Users\GL 62M 7RDX\source\repos\Steganography_154048G\Steganography_154048G\obj\Debug\Steganography_154048G.csproj.GenerateResource.cache
+C:\Users\GL 62M 7RDX\source\repos\Steganography_154048G\Steganography_154048G\obj\Debug\Steganography_154048G.csproj.CoreCompileInputs.cache
+C:\Users\GL 62M 7RDX\source\repos\Steganography_154048G\Steganography_154048G\obj\Debug\Steganography_154048G.exe
+C:\Users\GL 62M 7RDX\source\repos\Steganography_154048G\Steganography_154048G\obj\Debug\Steganography_154048G.pdb
+C:\Users\GL 62M 7RDX\source\repos\Steganography_154048G\Steganography_154048G\obj\Debug\Steganography_154048G.Form1.resources
