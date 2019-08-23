@@ -97,6 +97,13 @@ namespace Steganography_154048G
         //activate after click save image button
         private void saveButton_Click(object sender, EventArgs e)
         {
+            if (bmp == null)
+            {
+                MessageBox.Show("No Image file", "Error");
+
+                return;
+            }
+
             SaveFileDialog save_dialog = new SaveFileDialog();
             save_dialog.Filter = "Png Image|*.png|Bitmap Image|*.bmp";
 
@@ -125,6 +132,13 @@ namespace Steganography_154048G
         private void extractButton_Click(object sender, EventArgs e)
         {
             bmp = (Bitmap)imagePictureBox.Image;
+
+            if (bmp == null)
+            {
+                MessageBox.Show("No Image file", "Error");
+
+                return;
+            }
 
             string extractedText = SteganographyOps.extractText(bmp);
 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataTextBox = new System.Windows.Forms.TextBox();
@@ -36,8 +37,8 @@
             this.imagePictureBox = new System.Windows.Forms.PictureBox();
             this.saveButton = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagePictureBox)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -110,8 +111,8 @@
             // 
             // imagePictureBox
             // 
+            this.imagePictureBox.BackgroundImage = global::Steganography_154048G.Properties.Resources.click_to_upload1;
             this.imagePictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imagePictureBox.Image = global::Steganography_154048G.Properties.Resources.click_to_upload;
             this.imagePictureBox.Location = new System.Drawing.Point(9, 34);
             this.imagePictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.imagePictureBox.Name = "imagePictureBox";
@@ -151,17 +152,6 @@
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(524, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 20);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Image Link";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // textBox1
             // 
             this.textBox1.Cursor = System.Windows.Forms.Cursors.No;
@@ -173,6 +163,17 @@
             this.textBox1.Size = new System.Drawing.Size(319, 51);
             this.textBox1.TabIndex = 14;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(524, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 20);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Image Link";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -181,6 +182,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1021, 465);
             this.Controls.Add(this.groupBox2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Form1";

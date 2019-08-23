@@ -84,5 +84,8 @@
   <ItemGroup>
     <None Include="Resources\click to upload.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click to upload1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
