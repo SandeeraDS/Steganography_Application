@@ -8,7 +8,9 @@ namespace Steganography_154048G
 {
     public partial class Form1 : Form
     {
+        //catch the image
         private Bitmap bmp = null;
+        //catch the message
         private string extractedText = string.Empty;
 
         public Form1()
@@ -16,6 +18,7 @@ namespace Steganography_154048G
             InitializeComponent();
         }
 
+        //activate after click on the upload image tab
         private void imagePictureBox_Click(object sender, EventArgs e)
         {
             dataTextBox.Text = "";
@@ -30,6 +33,7 @@ namespace Steganography_154048G
             }
         }
 
+        //activate after click hide message button
         private void hideButton_Click(object sender, EventArgs e)
         {
             bmp = (Bitmap)imagePictureBox.Image;
@@ -49,7 +53,7 @@ namespace Steganography_154048G
 
             
             string text = dataTextBox.Text;
-
+            //check whether image is enough to hold the message
             if (pixels * 3 <(text.Length*8)+8) {
 
                 MessageBox.Show("Image is not enough", "Error");
@@ -57,20 +61,21 @@ namespace Steganography_154048G
                 return;
             }
 
-                if (text.Equals(""))
+            //check message box is empty
+            if (text.Equals(""))
             {
-                MessageBox.Show("The text you want to hide can't be empty", "Error");
+                MessageBox.Show("You have not entered any message ", "Error");
 
                 return;
             }
-
+            // check message is greater than 255 characters
             if (text.Length > 255)
             {
                 MessageBox.Show("The text is too big !!! Maximum length is 255", "Error");
 
                 return;
             }
-
+            //check message contain invalid chracters
             for(int i = 0; i < text.Length; i++)
             {
                 if (text[i] < 32 || text[i] > 125)
@@ -84,11 +89,12 @@ namespace Steganography_154048G
 
             bmp = SteganographyOps.embedText(text, bmp);
 
-            MessageBox.Show("Your text was hidden in the image successfully!", "OK");
+            MessageBox.Show("Message was hidden in the image successfully!", "OK");
             dataTextBox.Text = "";
 
         }
 
+        //activate after click save image button
         private void saveButton_Click(object sender, EventArgs e)
         {
             SaveFileDialog save_dialog = new SaveFileDialog();
@@ -115,7 +121,7 @@ namespace Steganography_154048G
             }
            
         }
-
+        //activate after click extract message button
         private void extractButton_Click(object sender, EventArgs e)
         {
             bmp = (Bitmap)imagePictureBox.Image;
