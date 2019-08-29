@@ -193,15 +193,15 @@ namespace Steganography_154048G
                             {
                                 return extractedText;
                             }
-
-                            // convert the character value from int to char
-
+                            
+                            //Check whether it is contain the image
                             if (charValue<32 || charValue>125) {
 
                                 return null;
                             }
                             else
                             {
+                                // convert the character value from int to char
                                 char c = (char)charValue;
                                 // add the current character to the result text
                                 extractedText += c.ToString();
